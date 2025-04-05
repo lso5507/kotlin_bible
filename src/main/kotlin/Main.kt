@@ -9,5 +9,5 @@ fun main() = runBlocking<Unit> {
     }
     launch(context = CoroutineName("myCoroutine2")) {
         println("${Thread.currentThread().name} is Running")
-    }
+}
 }
