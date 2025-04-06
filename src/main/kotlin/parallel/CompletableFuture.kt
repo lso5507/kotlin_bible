@@ -1,5 +1,5 @@
 package main.java.parallel
-
+import utils.getElapsedTime
 import java.util.concurrent.CompletableFuture
 import java.util.concurrent.Executors
 
@@ -27,7 +27,4 @@ fun completableFuture() {
 fun main(){
     completableFuture()
 }
-fun getElapsedTime(startTime:Long):Long{
-    val endTime = System.currentTimeMillis()
-    return endTime - startTime
-}
+
