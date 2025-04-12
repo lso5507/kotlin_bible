@@ -1,8 +1,6 @@
 package coroutine
 
-import kotlinx.coroutines.CoroutineName
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 /**
  * coroutine Scope 학습
@@ -22,5 +20,18 @@ fun main() = runBlocking<Unit> {
     }
     launch(CoroutineName("cou2")) {
         println("[${Thread.currentThread().name}] 실행]")
+    }
+}
+
+/**
+ * newScope의 Job과, main launch의 job은 다름
+ */
+fun newScope() = runBlocking<Unit> {
+    launch {
+        println("[${Thread.currentThread().name}] Start")
+    }
+    val newScope= CoroutineScope(Dispatchers.IO);
+    newScope.launch {
+        println("[${Thread.currentThread().name}] Start")
     }
 }
