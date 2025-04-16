@@ -22,7 +22,7 @@ open class Drink{
 }
 class Cola: Drink() {
     var type = "콜라"
-    override fun drink() {
+    override fun drink() { 
         println("${type}을 마십니다")
     }
     fun washD(){
