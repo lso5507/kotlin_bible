@@ -10,7 +10,7 @@ fun main(){
     // 반공변인 경우는 put만 가능
     fishCage.put(Fish("fish3"))
     fishCage.putAll(fishes)
-    fishCage.putAll(animals)
+//    fishCage.putAll(animals)
 //    fishCage.putAll(birds)
 }
 class Cage4<in T>{
@@ -18,7 +18,7 @@ class Cage4<in T>{
     fun put(animal: T){
         animals.add(animal)
     }
-    fun putAll(cage: List<Fish>){
+    fun putAll(cage: List<T>){
         animals.addAll(cage)
     }
 }
