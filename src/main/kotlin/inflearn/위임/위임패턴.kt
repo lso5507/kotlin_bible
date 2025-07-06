@@ -1,4 +1,4 @@
-package inflearn
+package inflearn.위임
 
 import kotlin.reflect.KProperty
 
