@@ -3,6 +3,10 @@ package inflearn.KDSL
 import kotlin.properties.Delegates
 import kotlin.properties.ReadWriteProperty
 
+/**
+ * 완성안함.
+ * 소스가 너무 복잡해져 실무에 적용안할듯?
+ */
 fun main(){
     val yml = dockerCompose {
         version{3}
