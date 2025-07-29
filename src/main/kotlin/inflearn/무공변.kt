@@ -20,6 +20,7 @@ open class Animal(val name:String)
 open class Fish(name: String):Animal(name)
 open class Bird(name: String):Animal(name)
 class GoldFish(name: String) : Fish(name)
+class Carp(name: String) : Fish(name)
 
 /**
  * 자바코드를 예로들자면.
